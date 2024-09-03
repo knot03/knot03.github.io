@@ -1,35 +1,142 @@
-doctype html
-html(lang='ja')
-  head
-    meta(charset="utf-8")
-    meta(name="viewport", content="width=device-width,initial-scale=1.0")
-    /////////////////////////
-    // generate title
-    /////////////////////////
-    - if(page.title) {
-      - var this_title = page.title + " | " + config.title;
-    - } else if(is_archive()) {
-      - var this_title = "archive | " + config.title;
-    - } else if (is_tag()){
-      - var this_title = page.tag + " | " + config.title;
-    - } else {
-      - var this_title = config.title;
-    - };
-    title #{this_title}
-    - if(page.description) {
-      - var this_desc = page.description;
-    - } else {
-      - var this_desc = config.description;
-    - };
-    meta(name="description", content="#{this_desc}")
-    link(rel="icon", href="favicon/favicon.ico")
-    != css('css/all')
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
-    script(src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js")
-    != js('js/autopager')
-    != js('js/all')
-    != open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus})
-    body
-      include _partial/side
-      != body
-      include _partial/google_analytics
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  
+  <title>アーカイブ: 2024/9 | 匙加減</title>
+  <meta name="author" content="Knot03">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="匙加減"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="shortcut icon" href="/favicon.png">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
+  
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">匙加減</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/null">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+<h2 class="archive-title">2024/9</h2>
+
+
+  <div class="archive">
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2024-09-03T13:47:00.000Z"><a href="/2024/09/03/240903-ad01/">2024-09-03</a></time>
+            
+              <h1 class="title"><a href="/2024/09/03/240903-ad01/">first post</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+  </div>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="検索">
+    <input type="hidden" name="as_sitesearch" value="knot03.github.io">
+  </form>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">カテゴリー</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/diary/">diary</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">タグ</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/diary-anime/">diary_anime</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+
+  
+  <div class="widget widget-archives">
+    <h3 class="title">アーカイブ</h3>
+    <div class="entry">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/09/">9月 2024</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2024 Knot03
+  
+</div>
+<div class="clearfix"></div></footer>
+  
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+<script src="/js/gallery.js"></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script>
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
